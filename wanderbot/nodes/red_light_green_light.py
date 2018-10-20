@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+# Sends movement commands to the Turtlebot 3
+# The turtlebot3 can be observed in Gazebo by running: roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+
 import rospy
 from geometry_msgs.msg import Twist
 
