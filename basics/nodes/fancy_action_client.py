@@ -2,12 +2,12 @@
 
 # Client to use with the fancy action server
 
-import time
 import sys
+import time
 
-import rospy
 import actionlib
-from basics.msg import TimerAction, TimerGoal, TimerResult, TimerFeedback
+import rospy
+from basics.msg import TimerAction, TimerGoal
 
 
 def feedback_cb(feedback):

@@ -2,11 +2,11 @@
 
 # Simple action server that waits for the given amount of time before returning success
 
-import rospy
-
 import time
+
 import actionlib
-from basics.msg import TimerAction, TimerGoal, TimerResult
+import rospy
+from basics.msg import TimerAction, TimerResult
 
 
 def do_timer(goal):

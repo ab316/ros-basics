@@ -2,9 +2,9 @@
 
 # Simple action client that sends a 5 second wait goal to the simple action server
 
-import rospy
 import actionlib
-from basics.msg import TimerAction, TimerGoal, TimerResult
+import rospy
+from basics.msg import TimerAction, TimerGoal
 
 rospy.init_node('timer_action_client')
 client = actionlib.SimpleActionClient('timer', TimerAction)
