@@ -10,6 +10,7 @@ from std_msgs.msg import Int32
 
 rospy.init_node('doubler')
 
+
 def callback(msg):
     doubled = Int32()
     doubled.data = msg.data * 2

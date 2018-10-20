@@ -11,7 +11,7 @@ green_light_twist = Twist()
 green_light_twist.linear.x = 0.5
 
 while not rospy.get_rostime():
-  pass
+    pass
 
 driving_forward = False
 light_change_time = rospy.Time.now() + rospy.Duration(3)
@@ -25,7 +25,6 @@ while not rospy.is_shutdown():
 
     if rospy.Time.now() > light_change_time:
         driving_forward = not driving_forward
-	print driving_forward
         light_change_time = rospy.Time.now() + rospy.Duration(3)
 
     rate.sleep()

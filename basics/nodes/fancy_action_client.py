@@ -9,6 +9,7 @@ import rospy
 import actionlib
 from basics.msg import TimerAction, TimerGoal, TimerResult, TimerFeedback
 
+
 def feedback_cb(feedback):
     print '[Feedback] Time elapsed: %f' % feedback.time_elapsed.to_sec()
     print '[Feedback] Time Remaining: %f' % feedback.time_remaining.to_sec()
@@ -43,7 +44,6 @@ client.send_goal(goal, feedback_cb=feedback_cb)
 if cancel:
     time.sleep(cancel)
     client.cancel_goal()
-
 
 client.wait_for_result()
 print '[Result] State: %d' % client.get_state()

@@ -4,7 +4,7 @@ My first attempt at learning ROS 1.0. This repository contains code/packages I m
 ## Getting Started
 Follow the instructions to run the package
 
-### Prequisites
+### Perquisites
 * ROS Melodic or newer
 * Gazebo 9 from [http://gazebosim.org/tutorials?cat=guided_b&tut=guided_b1]
 * `sudo apt-get install ros-melodic-gazebo-ros-pkgs ros-melodic-gazebo-ros-control ros-melodic-teleop-twist-keyboard`

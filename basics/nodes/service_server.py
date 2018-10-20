@@ -6,6 +6,7 @@
 import rospy
 from basics.srv import WordCount, WordCountResponse
 
+
 def count_words(request):
     return WordCountResponse(len(request.words.split()))
 
